@@ -1,0 +1,97 @@
+
+$optimum
+[1] 0.01
+
+$valueFunctions
+$valueFunctions$Wyœwietlacz
+  [,1] [,2]  [,3]
+x  7.9 9.70 12.90
+y  0.0 0.01  0.01
+
+$valueFunctions$`Pojemnoœæ `
+  [,1]   [,2]    [,3]    [,4]
+x   16 32.000 128.000 256.000
+y    0  0.475   0.475   0.475
+
+$valueFunctions$`Pamiêæ RAM`
+  [,1] [,2]
+x    2 4.00
+y    0 0.02
+
+$valueFunctions$` Cena `
+  [,1]    [,2]    [,3]    [,4]    [,5]    [,6]    [,7]   [,8]
+x 5699 5199.00 4949.00 4599.00 3599.00 2999.00 2899.00 2499.0
+y    0    0.02    0.03    0.03    0.07    0.07    0.09    0.1
+    [,9]    [,10]
+x 2399.0 1869.000
+y    0.1    0.495
+
+
+$overallValues
+     Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary) 
+                                               0.575 
+   Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny) 
+                                               0.575 
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny) 
+                                               0.565 
+    Apple iPad Pro 9,7 Wi-Fi + Cellular 32GB (zloty) 
+                                               0.555 
+    Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty) 
+                                               0.545 
+  Apple iPad Pro 12,9 Wi-Fi + Cellular 128GB (zloty) 
+                                               0.535 
+  Apple iPad Pro 12,9 Wi-Fi + Cellular 128GB (szary) 
+                                               0.525 
+   Apple iPad Pro 9,7 Wi-Fi + Cellular 256GB (zloty) 
+                                               0.515 
+Apple iPad Pro 12,9 Wi-Fi + Cellular 256GB (srebrny) 
+                                               0.505 
+     Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty) 
+                                               0.495 
+
+$ranks
+     Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary) 
+                                                   1 
+   Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny) 
+                                                   1 
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny) 
+                                                   3 
+    Apple iPad Pro 9,7 Wi-Fi + Cellular 32GB (zloty) 
+                                                   4 
+    Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty) 
+                                                   5 
+  Apple iPad Pro 12,9 Wi-Fi + Cellular 128GB (zloty) 
+                                                   6 
+  Apple iPad Pro 12,9 Wi-Fi + Cellular 128GB (szary) 
+                                                   7 
+   Apple iPad Pro 9,7 Wi-Fi + Cellular 256GB (zloty) 
+                                                   8 
+Apple iPad Pro 12,9 Wi-Fi + Cellular 256GB (srebrny) 
+                                                   9 
+     Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty) 
+                                                  10 
+
+$errors
+     Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary) 
+                                                0.01 
+   Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny) 
+                                                0.00 
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny) 
+                                                0.00 
+    Apple iPad Pro 9,7 Wi-Fi + Cellular 32GB (zloty) 
+                                                0.00 
+    Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty) 
+                                                0.00 
+  Apple iPad Pro 12,9 Wi-Fi + Cellular 128GB (zloty) 
+                                                0.00 
+  Apple iPad Pro 12,9 Wi-Fi + Cellular 128GB (szary) 
+                                                0.00 
+   Apple iPad Pro 9,7 Wi-Fi + Cellular 256GB (zloty) 
+                                                0.00 
+Apple iPad Pro 12,9 Wi-Fi + Cellular 256GB (srebrny) 
+                                                0.00 
+     Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty) 
+                                                0.00 
+
+$Kendall
+[1] 0.9888265
