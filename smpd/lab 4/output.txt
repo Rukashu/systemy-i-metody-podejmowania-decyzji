@@ -1,0 +1,169 @@
+              levelName
+1  Buy smartfon                                                
+2   ¦--Performance                                             
+3   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)     
+4   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)   
+5   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)  
+6   ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)    
+7   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)    
+8   ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)  
+9   ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)  
+10  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)   
+11  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)
+12  ¦   °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)     
+13  ¦--Quality                                                 
+14  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)     
+15  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)   
+16  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)  
+17  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)    
+18  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)    
+19  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)  
+20  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)  
+21  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)   
+22  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)
+23  ¦   °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)     
+24  ¦--Style                                                   
+25  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)     
+26  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)   
+27  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)  
+28  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)    
+29  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)    
+30  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)  
+31  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)  
+32  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)   
+33  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)
+34  ¦   °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)     
+35  °--Price                                                   
+36      ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)     
+37      ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)   
+38      ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)  
+39      ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)    
+40      ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)    
+41      ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)  
+42      ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)  
+43      ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)   
+44      ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)
+45      °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)     
+   priority
+1        NA
+2        NA
+3        NA
+4        NA
+5        NA
+6        NA
+7        NA
+8        NA
+9        NA
+10       NA
+11       NA
+12       NA
+13       NA
+14       NA
+15       NA
+16       NA
+17       NA
+18       NA
+19       NA
+20       NA
+21       NA
+22       NA
+23       NA
+24       NA
+25       NA
+26       NA
+27       NA
+28       NA
+29       NA
+30       NA
+31       NA
+32       NA
+33       NA
+34       NA
+35       NA
+36       NA
+37       NA
+38       NA
+39       NA
+40       NA
+41       NA
+42       NA
+43       NA
+44       NA
+45       NA
+> Visualize(smartfonAhp)
+> Analyze(smartfonAhp)
+                  Weight
+1 Buy smartfon    100.0%
+2  ¦--Price        42.1%
+3  ¦--Performance  34.3%
+4  ¦--Quality      19.2%
+5  °--Style         4.4%
+  Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)
+1                                             12.4%
+2                                              5.7%
+3                                              3.2%
+4                                              3.1%
+5                                              0.5%
+  Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)
+1                                           12.4%
+2                                            5.4%
+3                                            3.2%
+4                                            3.1%
+5                                            0.7%
+  Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)
+1                                           11.2%
+2                                            7.3%
+3                                            3.2%
+4                                            0.5%
+5                                            0.3%
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)
+1                                              10.5%
+2                                               4.7%
+3                                               3.2%
+4                                               2.1%
+5                                               0.5%
+  Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)
+1                                            10.1%
+2                                             3.8%
+3                                             3.2%
+4                                             2.8%
+5                                             0.4%
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)
+1                                             9.8%
+2                                             4.5%
+3                                             3.2%
+4                                             1.7%
+5                                             0.4%
+  Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)
+1                                               8.8%
+2                                               2.7%
+3                                               4.0%
+4                                               1.7%
+5                                               0.4%
+  Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)
+1                                               8.7%
+2                                               2.6%
+3                                               4.0%
+4                                               1.7%
+5                                               0.4%
+  Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)
+1                                                 8.1%
+2                                                 2.4%
+3                                                 4.0%
+4                                                 1.4%
+5                                                 0.4%
+  Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)
+1                                              7.9%
+2                                              3.0%
+3                                              3.2%
+4                                              1.4%
+5                                              0.3%
+  Inconsistency
+1          5.7%
+2          0.0%
+3          0.0%
+4         10.4%
+5          9.8%
+> AnalyzeTable(smartfonAhp)
+> AnalyzeTable(smartfonAhp, decisionMaker = "Father")
+> AnalyzeTable(smartfonAhp, decisionMaker = "Mother")
