@@ -1,0 +1,102 @@
+
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library("C50")
+Warning message:
+pakiet ‘C50’ zosta³ zbudowany w wersji R 3.3.3 
+> data <- matrix(c(7.9, 7.9, 7.9, 9.7, 7.9, 12.9, 12.9, 9.7, 12.9, 7.9,
++                  32, 32, 128, 32, 128, 128, 128, 256, 256, 16,
++                  2, 2, 2, 2, 2, 4, 4, 2, 4, 2,
++                  2499, 2399, 2899, 3599, 2999, 4949, 5199, 4599, 5699, 1869), 10, 4)
+> labels <- c("1", "2", "3", "4", "5")
+> result <- c(2, 4, 3, 2, 3, 4, 3, 4, 3, 4)
+> test <- factor(result, labels)
+> colnames(data) <- c("Wyswietlacz", "Pojemnosc", "RAM", "Price")
+> ruleModel <- C5.0(x = data[,], y = test, rules = TRUE)
+> ruleModel
+
+Call:
+C5.0.default(x = data[, ], y = test, rules = TRUE)
+
+Rule-Based Model
+Number of samples: 10 
+Number of predictors: 4 
+
+Number of Rules: 4 
+
+Non-standard options: attempt to group attributes
+
+> summary(ruleModel)
+
+Call:
+C5.0.default(x = data[, ], y = test, rules = TRUE)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Tue Jun 13 10:59:43 2017
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 10 cases (5 attributes) from undefined.data
+
+Rules:
+
+Rule 1: (4/2, lift 2.5)
+	Pojemnosc <= 32
+	->  class 2  [0.500]
+
+Rule 2: (6/2, lift 1.6)
+	Pojemnosc > 32
+	->  class 3  [0.625]
+
+Rule 3: (2, lift 1.9)
+	Price <= 2399
+	->  class 4  [0.750]
+
+Rule 4: (2, lift 1.9)
+	Price > 3599
+	Price <= 4949
+	->  class 4  [0.750]
+
+Default class: 3
+
+
+Evaluation on training data (10 cases):
+
+	        Rules     
+	  ----------------
+	    No      Errors
+
+	     4    0( 0.0%)   <<
+
+
+	   (a)   (b)   (c)   (d)   (e)    <-classified as
+	  ----  ----  ----  ----  ----
+	                                  (a): class 1
+	           2                      (b): class 2
+	                 4                (c): class 3
+	                       4          (d): class 4
+	                                  (e): class 5
+
+
+	Attribute usage:
+
+	100.00%	Pojemnosc
+	 40.00%	Price
+
+
+Time: 0.1 secs

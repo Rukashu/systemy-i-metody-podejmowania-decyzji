@@ -1,0 +1,90 @@
+
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Workspace loaded from C:/Users/User/Desktop/metody podejmowania decyzji/systemy-i-metody-podejmowania-decyzji/smpd/lab 8/.RData]
+
+> library("rpart")
+Warning message:
+pakiet ‘rpart’ zosta³ zbudowany w wersji R 3.3.3 
+> library("dplyr")
+
+Do³¹czanie pakietu: ‘dplyr’
+
+Nastêpuj¹ce obiekty zosta³y zakryte z ‘package:stats’:
+
+    filter, lag
+
+Nastêpuj¹ce obiekty zosta³y zakryte z ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Warning messages:
+1: pakiet ‘dplyr’ zosta³ zbudowany w wersji R 3.3.3 
+2: Installed Rcpp (0.12.10) different from Rcpp used to build dplyr (0.12.11).
+Please reinstall dplyr to avoid random crashes or undefined behavior. 
+> library("party")
+£adowanie wymaganego pakietu: grid
+£adowanie wymaganego pakietu: mvtnorm
+£adowanie wymaganego pakietu: modeltools
+£adowanie wymaganego pakietu: stats4
+£adowanie wymaganego pakietu: strucchange
+£adowanie wymaganego pakietu: zoo
+
+Do³¹czanie pakietu: ‘zoo’
+
+Nastêpuj¹ce obiekty zosta³y zakryte z ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+£adowanie wymaganego pakietu: sandwich
+Warning messages:
+1: pakiet ‘party’ zosta³ zbudowany w wersji R 3.3.3 
+2: pakiet ‘strucchange’ zosta³ zbudowany w wersji R 3.3.3 
+3: pakiet ‘zoo’ zosta³ zbudowany w wersji R 3.3.3 
+4: pakiet ‘sandwich’ zosta³ zbudowany w wersji R 3.3.3 
+> data <- matrix(c(7.9, 7.9, 7.9, 9.7, 7.9, 12.9, 12.9, 9.7, 12.9, 7.9,
++                  32, 32, 128, 32, 128, 128, 128, 256, 256, 16,
++                  2, 2, 2, 2, 2, 4, 4, 2, 4, 2,
++                  2499, 2399, 2899, 3599, 2999, 4949, 5199, 4599, 5699, 1869), 10, 4)
+> labels <- c("1", "2", "3", "4", "5")
+> result <- c(2, 4, 3, 2, 3, 4, 3, 4, 3, 4)
+> factors <- factor(result, labels)
+> data <- cbind(data, factors)
+> colnames(data) <- c("Wyswietlacz", "Pojemnosc", "RAM", "Price", "Rank")
+> mydata <- c("training", "test") %>% sample(nrow(data), replace=T) %>% split(data, .)
+> rtree_fit <- rpart(Rank ~ ., mydata$training, control = rpart.control(minsplit=1, minbucket=1, cp=0.001))
+Error in terms.formula(formula, data = data) : 
+  '.' w formule oraz brak argumentu 'data'
+> colnames(data) <- c("Wyswietlacz", "Pojemnosc", "RAM", "Price")
+Error in `colnames<-`(`*tmp*`, value = c("Wyswietlacz", "Pojemnosc", "RAM",  : 
+  length of 'dimnames' [2] not equal to array extent
+> mydata <- c("training", "test") %>% sample(nrow(data), replace=T) %>% split(data, .)
+> colnames(data) <- c("Wyswietlacz", "Pojemnosc", "RAM", "Price", "Rank")
+> data <- as.data.frame(matrix(c(7.9, 7.9, 7.9, 9.7, 7.9, 12.9, 12.9, 9.7, 12.9, 7.9,
++                  32, 32, 128, 32, 128, 128, 128, 256, 256, 16,
++                  2, 2, 2, 2, 2, 4, 4, 2, 4, 2,
++                  2499, 2399, 2899, 3599, 2999, 4949, 5199, 4599, 5699, 1869), 10, 4))
+> labels <- c("1", "2", "3", "4", "5")
+> result <- c(2, 4, 3, 2, 3, 4, 3, 4, 3, 4)
+> factors <- factor(result, labels)
+> data <- cbind(data, factors)
+> colnames(data) <- c("Wyswietlacz", "Pojemnosc", "RAM", "Price", "Rank")
+> mydata <- c("training", "test") %>% sample(nrow(data), replace=T) %>% split(data, .)
+> rtree_fit <- rpart(Rank ~ ., mydata$training, control = rpart.control(minsplit=1, minbucket=1, cp=0.001))
+> par(mar = rep(0.2, 4))
+> plot(rtree_fit, uniform = TRUE)
+> text(rtree_fit, use.n = TRUE)

@@ -1,0 +1,135 @@
+
+R version 3.3.2 (2016-10-31) -- "Sincere Pumpkin Patch"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Workspace loaded from C:/Users/User/Desktop/metody podejmowania decyzji/systemy-i-metody-podejmowania-decyzji/smpd/lab 3/.RData]
+
+> library(ahp)
+Warning message:
+pakiet ‘ahp’ zosta³ zbudowany w wersji R 3.3.3 
+> ahpFile <- system.file("extdata", "smartfon.ahp", package="ahp")
+> smartfonAhp <- Load(ahpFile)
+> Calculate(smartfonAhp)
+> print(smartfonAhp, priority = function(x) x$sparent$priority["total", x$name])
+                                                      levelName priority
+1  Buy smartfon                                                       NA
+2   ¦--Performance                                                    NA
+3   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)            NA
+4   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)          NA
+5   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)         NA
+6   ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)           NA
+7   ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)           NA
+8   ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)         NA
+9   ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)         NA
+10  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)          NA
+11  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)       NA
+12  ¦   °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)            NA
+13  ¦--Quality                                                        NA
+14  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)            NA
+15  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)          NA
+16  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)         NA
+17  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)           NA
+18  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)           NA
+19  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)         NA
+20  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)         NA
+21  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)          NA
+22  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)       NA
+23  ¦   °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)            NA
+24  ¦--Style                                                          NA
+25  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)            NA
+26  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)          NA
+27  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)         NA
+28  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)           NA
+29  ¦   ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)           NA
+30  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)         NA
+31  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)         NA
+32  ¦   ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)          NA
+33  ¦   ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)       NA
+34  ¦   °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)            NA
+35  °--Price                                                          NA
+36      ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)            NA
+37      ¦--Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)          NA
+38      ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)         NA
+39      ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)           NA
+40      ¦--Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)           NA
+41      ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)         NA
+42      ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)         NA
+43      ¦--Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty)          NA
+44      ¦--Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)       NA
+45      °--Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)            NA
+> Visualize(smartfonAhp)
+> Analyze(smartfonAhp)
+                  Weight Apple iPad mini 4 Wi-Fi + Cellular 32GB (srebrny)
+1 Buy smartfon    100.0%                                             12.4%
+2  ¦--Price        42.1%                                              5.7%
+3  ¦--Performance  34.3%                                              3.2%
+4  ¦--Quality      19.2%                                              3.1%
+5  °--Style         4.4%                                              0.5%
+  Apple iPad mini 4 Wi-Fi + Cellular 32GB (szary)
+1                                           12.4%
+2                                            5.4%
+3                                            3.2%
+4                                            3.1%
+5                                            0.7%
+  Apple iPad mini 4 Wi-Fi + Cellular 16GB (zloty)
+1                                           11.2%
+2                                            7.3%
+3                                            3.2%
+4                                            0.5%
+5                                            0.3%
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (srebrny)
+1                                              10.5%
+2                                               4.7%
+3                                               3.2%
+4                                               2.1%
+5                                               0.5%
+  Apple iPad Pro 9.7 Wi-Fi + Cellular 32GB (zloty)
+1                                            10.1%
+2                                             3.8%
+3                                             3.2%
+4                                             2.8%
+5                                             0.4%
+  Apple iPad mini 4 Wi-Fi + Cellular 128GB (zloty)
+1                                             9.8%
+2                                             4.5%
+3                                             3.2%
+4                                             1.7%
+5                                             0.4%
+  Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (zloty)
+1                                               8.8%
+2                                               2.7%
+3                                               4.0%
+4                                               1.7%
+5                                               0.4%
+  Apple iPad Pro 12.9 Wi-Fi + Cellular 128GB (szary)
+1                                               8.7%
+2                                               2.6%
+3                                               4.0%
+4                                               1.7%
+5                                               0.4%
+  Apple iPad Pro 12.9 Wi-Fi + Cellular 256GB (srebrny)
+1                                                 8.1%
+2                                                 2.4%
+3                                                 4.0%
+4                                                 1.4%
+5                                                 0.4%
+  Apple iPad Pro 9.7 Wi-Fi + Cellular 256GB (zloty) Inconsistency
+1                                              7.9%          5.7%
+2                                              3.0%          0.0%
+3                                              3.2%          0.0%
+4                                              1.4%         10.4%
+5                                              0.3%          9.8%
+> AnalyzeTable(smartfonAhp)
